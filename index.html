@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera - Productos Capilares</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+            padding-top: 80px;
+        }
+
+
+        /* Menú de navegación fijo */
+        .menu-secciones {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+        }
+
+
+        .menu-secciones h3 {
+            color: white;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+
+        .menu-secciones a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+
+        .menu-secciones a:hover {
+            background: rgba(255,255,255,0.4);
+            transform: translateY(-2px);
+        }
+
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #667eea;
+            font-size: 3em;
+            margin: 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+
+        /* Secciones de marcas */
+        h2 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            margin: 40px 0 30px 0;
+            border-radius: 10px;
+            font-size: 2em;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+
+        /* Contenedor para cada producto */
+        .producto {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px auto;
+            max-width: 800px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+
+        /* Logos de marcas */
+        .logo-marca {
+            display: block;
+            max-width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+
+        /* Nombres de productos */
+        h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin: 15px 0 10px 0;
+        }
+
+
+        /* Precios */
+        .precio {
+            color: #27ae60;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+
+        /* Imágenes de productos */
+              .producto img {
+    display: block;
+    width: 350px;      /* mismo ancho */
+    height: 350px;     /* misma altura */
+    object-fit: cover; /* recorta sin deformar */
+    margin: 28px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.img-linea {
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+        /* Descripciones */
+        h4 {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 15px 0;
+            text-align: justify;
+            font-weight: normal;
+        }
+
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+
+            .menu-secciones {
+                justify-content: center;
+            }
+
+
+            .menu-secciones a {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+
+            .producto {
+                padding: 15px;
+                margin: 15px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- MENÚ DE SECCIONES FIJO -->
+<div class="menu-secciones">
+    <h3>Ir a:</h3>
+    <a href="#anyeluz">Anyeluz</a>
+    <a href="#kaba">Kaba</a>
+    <a href="#lareceta">La Receta</a>
+    <a href="#ritual-botanico">Ritual Botánico</a>
+    <a href="#milagros">Milagros Herbal</a>
+    <a href="#clickhair">Click Hair</a>
+    <a href="#pocion">La Poción</a>
+    <a href="#leche">Leche pal Pelo</a>
+    <a href="#ole">Ole Capilar</a>
+    <a href="#lehit">Lehit</a>
+    <a href="#skala">Skala</a>
+    <a href="#dromatic">Dromatic</a>
+</div>
+
+
+<h1>PRODUCTOS CAPILARES</h1>
+
+
+<h2 id="anyeluz">🏷️ MARCA ANYELUZ</h2>
+
+
+<img class="logo-marca" src="https://www.anyeluz.com/cdn/shop/files/LOGO_2.png?v=1715893571&width=4500" alt="Logo Anyeluz">
+
+
+<div class="producto">
+    <h3>SHAMPOO DE CEBOLLA</h3>
+    <p class="precio">$43.000</p>
+    <img src="https://unicacol.com/cdn/shop/files/UNICA_130.jpg?v=1703787252&width=1445" alt="Shampoo de Cebolla">
+    <h4>El shampoo tiene como principal componente la cebolla roja, rica en quercetina, un antioxidante que fortalece el cabello y previene su ruptura y descamación. Su contenido de azufre estimula la circulación sanguínea, reduce la inflamación y favorece un crecimiento capilar sano. Además, es libre de sal y parabenos, ayuda a controlar la grasa, disminuye irritaciones del cuero cabelludo y aporta brillo al cabello.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO DE ROMERO</h3>
+    <p class="precio">$41.000</p>
+    <img src="https://unicacol.com/cdn/shop/files/7.jpg?v=1703875641&width=1445" alt="Shampoo de Romero">
+    <h4>Con extracto de cebolla, ácido hialurónico y romero por dentro. Ideal para acelerar el crecimiento, darle brillo y sedosidad a tu cabello.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO CON AGUACATE</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://unicacol.com/cdn/shop/files/UNICA_79.jpg?v=1703803355" alt="Shampoo con Aguacate">
+    <h4>Rico en Omegas 3, 6 y 9, contiene biotina y no tiene sal. Ideal para darle una súper nutrición, fuerza e hidratación a tu cabello.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO ANTICASPA</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://iconikabeauty.com/wp-content/uploads/2021/04/SHAMPOO-ANTICASPA-01.jpg" alt="Shampoo Anticaspa">
+    <h4>Es una fórmula sin sal, elaborada con extractos naturales y piritionato de zinc, que ayuda a reducir la caspa y la descamación, mientras hidrata y protege el cabello y el cuero cabelludo.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO GUSANO DE SEDA</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://unicacol.com/cdn/shop/files/UNICA_146.jpg?v=1703788776" alt="Shampoo Gusano de Seda">
+    <h4>Este producto aumenta la elasticidad, suavidad, fuerza y el brillo natural del cabello, protegiéndolo de la deshidratación. Actúa como una película protectora que evita el daño causado por productos alcalinos presentes en otros cosméticos, ayuda a reparar el cabello y puede usarse cada vez que se desee lavar el cabello.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO ALOE VERA</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHjgq70DTg4HfrLcnEeMvyMvY4mu9gddKSwg&s" alt="Shampoo Aloe Vera">
+    <h4>Limpia el exceso de grasa, fortalece y revitaliza el cabello, favoreciendo el cuidado del cuero cabelludo y promoviendo un crecimiento sano con su uso frecuente.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>ACONDICIONADOR ANYELUZ DE ARGÁN Y ALOE VERA</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://iconikabeauty.com/wp-content/uploads/2021/03/IMAGEN-ACONDICIONADOR-04.jpg" alt="Acondicionador Argán y Aloe Vera">
+    <h4>Nuestro acondicionador cuenta con extractos de aloe vera y ginseng mejora las propiedades del cabello dejándolo sedoso, revitalizado y fácil para peinar. Restablece la hidrofobicidad.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>ACONDICIONADOR CON CEBOLLA</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCLzDY85SsW7bkTMu52q6uMsGKZIGALVGRMQ&s" alt="Acondicionador con Cebolla">
+    <h4>Cuenta con extracto de cebolla y Vitamina E. Restablece la hidrofobicidad y desenreda el cabello con facilidad. Mejora las propiedades del cabello dejándolo sedoso, revitalizado y fácil de peinar.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>ACONDICIONADOR CON ROMERO</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5I-2XTaeV_pNQDWBIjieG_oayDAkCOQ-sGg&s" alt="Acondicionador con Romero">
+    <h4>Es el complemento perfecto para obtener un cabello suave, brillante, con apariencia saludable y fácil de peinar. Gracias a la cuidadosa combinación de Ácido Hialurónico y Extractos naturales conseguirás fuerza, nutrición y vitalidad en tu fibra capilar, a la vez que tendrás un cabello sedoso y manejable.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>TERMOPROTECTOR BLINDAGEM</h3>
+    <p class="precio">$43.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAdtbpwNyWr640fTcg_TcnWAaKlg9GPSG4ZA&s" alt="Termoprotector Blindagem">
+    <h4>Tiene una fórmula mejorada con componentes de base natural como: los óleos de coco y argán. Protege el cabello del calor intenso como: planchas, secadores y el sol intenso. Evitando que el cabello se quiebre, se debilite o se abran las puntas gracias a sus propiedades acondicionadoras y nutritivas.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>TERAPIA CAPILAR DE CRECIMIENTO</h3>
+    <p class="precio">$42.000</p>
+    <img src="https://iconikabeauty.com/wp-content/uploads/2021/04/TERAPIA-01.jpg" alt="Terapia Capilar">
+    <h4>Aportaran efectos, benéficos, al cabello como: el crecimiento, hidratación, fortalecimiento de la estructura capilar, protección color y reparación de daño en la superficie. Aumentando la resistencia, brillo, peinabilidad aportando apariencia sedosa y crecimiento del cabello.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>POTENCIALIZADOR DE ROMERO</h3>
+    <p class="precio">$41.000</p>
+    <img src="https://dvn.com.co/wp-content/uploads/2024/02/POTENCIALIZADOR-CON-ROMERO-ANYELUZ-2.png" alt="Potencializador de Romero">
+    <h4>Nuestro sistema multi beneficios fortalece y rejuvenece el folículo piloso ayudando a disminuir la caída del cabello. Mejora las condiciones del cuero cabelludo lo que permite estimular el crecimiento y aumentar la densidad de la fibra.</h4>
+</div>
+
+
+<h2 id="kaba">🏷️ MARCA KABA</h2>
+<img class="logo-marca" src="https://dluchiusacaribbean.com/cdn/shop/collections/E92B69F9-0C1F-44FE-BE77-DFFB78AA4B83.jpg?v=1542388003" alt="Logo Kaba">
+
+
+<div class="producto">
+    <h3>SHAMPOO DE CEBOLLA</h3>
+    <p class="precio">$45.000</p>
+    <img src="https://tiendasmartina.com/cdn/shop/files/157464-800-auto.webp?v=1698962665" alt="Shampoo de Cebolla Kaba">
+    <h4>Shampoo que limpia a profundidad el cuero cabelludo, lo cual ayuda a que el crecimiento del cabello no se estanque y pueda darse con naturalidad.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO REVITALIZANTE</h3>
+    <p class="precio">$48.000</p>
+    <img src="https://unicacol.com/cdn/shop/files/121.jpg?v=1713889473&width=1946" alt="Shampoo Revitalizante Kaba">
+    <h4>Restaura tu cabello de raíz a puntas gracias a nuestro Shampoo Revitalizante, debido a su combinación entre romero y cebolla, repara, fortalece y aumenta el volumen.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>BIO MASCARILLA CAPILAR</h3>
+    <p class="precio">$45.000</p>
+    <img src="https://unicacol.com/cdn/shop/files/BioMascarillaCapilarKaba.jpg?v=1704905369" alt="Bio Mascarilla Kaba">
+    <h4>Biomascarilla capilar que estimula el crecimiento de tu cabello, ayuda a disminuir la caída y repara la fibra capilar.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>TRATAMIENTO CAPILAR REVITALIZANTE</h3>
+    <p class="precio">$48.000</p>
+    <img src="https://dluchi.vtexassets.com/arquivos/ids/157726/K050-1.jpg?v=638194050446400000" alt="Tratamiento Revitalizante Kaba">
+    <h4>Es el complemento perfecto para todo tipo de cabello sobre todo si está fino y débil. Tratamiento capilar que contiene uva, quina y cola de caballo. Aumenta el grosor de tu cabello.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>TONICO CAPILAR CRECIMIENTO INTENSIVO</h3>
+    <p class="precio">$45.000</p>
+    <img src="https://surticosmeticosb2c.vtexassets.com/arquivos/ids/174895/Tonico-Capilar-Kaba-Crecimiento-Intensivo-x30ml-V140937-1.jpg?v=638912320661530000" alt="Tónico Capilar Kaba">
+    <h4>Acelera el crecimiento de tu cabello con el poder comprobado de nuestro Tónico capilar crecimiento intensivo. Este producto está diseñado especialmente para acelerar el crecimiento del cabello en zonas despobladas, y para que crezca más rápido.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>PERFUMES PARA EL CABELLO</h3>
+    <p class="precio">$48.000</p>
+    <img src="https://cabellocosmeticos.com/wp-content/uploads/2024/12/Perfume-capilar-Kaba-570x670.png" alt="Perfumes Capilares Kaba">
+    <h4>Aporta una deliciosa fragancia que durará todo el día, ayuda a controlar el frizz, además contiene aceites naturales como coco, algodón, entre otros que proporcionan brillo intenso y suavidad al cabello y lo mejor, no lo daña porque es LIBRE DE ALCOHOL.</h4>
+</div>
+
+
+<h2 id="lareceta">🏷️ MARCA LA RECETA</h2>
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScwjk27RmiBjoFZbwsIqg728KhMopmXFUtIA&s" alt="Logo La Receta">
+
+
+<div class="producto">
+    <h3>SHAMPOO ANTICASPA</h3>
+    <p class="precio">$46.000</p>
+    <img src="https://surticosmeticosb2c.vtexassets.com/arquivos/ids/168147-800-auto?v=638415443251700000&width=800&height=auto&aspect=true"alt="shampoo anticaspa">
+    <h4>Limpia a profundidad el cuero cabelludo, disminuye la caspa y las descamaciones. Sus aceites naturales y componentes activos, controlan y previenen la reaparición de esta. Es libre de siliconas y parabenos.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO DE ARGAN</h3>
+    <p class="precio">$40.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TR0JhIJRkMZyouwghz9yHJww-mXEAB8zAQ&s"alt="shampoo de argan">
+    <h4>Hidrata profundamente tu cuero cabelludo sin engrasar, combate la caspa y reduce la caída del cabello, Hidrata intensamente, nutre a profundidad y fortalece la fibra capilar, es perfecto para cabellos secos, opacos y sin vida. Enriquecido con ácidos grasos, omega-3, 6 y 9 que fortalecen tu cabello y estimulan su crecimiento, además es libre de siliconas y parabenos.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO DE ROMERO</h3>
+    <p class="precio">$50.000</p>
+    <img src="https://cocopinkstore.com/cdn/shop/files/IMG_7773-compressed-scaled.jpg?v=1757110650&width=1946"alt="shampoo de romero">
+    <h4>Su fórmula con extracto de romero, té verde y pantenol estimula el crecimiento, reduce la caída y repara la fibra capilar. Además, elimina la grasa y regula su producción, dejando tu cabello sedoso, sin frizz y por más tiempo limpio. Un estudio demostró una reducción significativa de la oleosidad en el 100% de las participantes.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>ACEITE REPARADOR DE PUNTAS</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXKHtq4F3AbNW7nlBD9GyDqBQNsJoAdILCg&s"alt="aceite reparador de puntas">
+    <h4>Nutre las capas más profundas de la fibra capilar, sella las cutículas, además proporciona brillo, vitalidad y protección contra la resequedad.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>TONICO CAPILAR PARA CABELLO Y BARBA</h3>
+    <p class="precio">$40.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI8__QVojCu7YV_931CYrRBhO7lfd99YSKrw&s"alt="tonico capilar para cabello y barba">
+    <h4>Contiene ácidos grasos que ayudan a reparar la fibra capilar, acelerar el crecimiento del cabello y a disminuir la pérdida. Está enriquecido con extractos naturales que nutren y revitalizan el cuero cabelludo, fomentando la regeneración celular del cabello, además evita la aparición de canas, también puedes usarlo en la barba.</h4>
+</div>
+
+<h2 id="ritual-botanico">🏷️ MARCA RITUAL BOTÁNICO</h2>
+<img class="logo-marca" src="https://geovannabeauty.com/wp-content/uploads/2024/06/logo-ritual-botanico.png"Logo Ritual Botánico">
+
+
+<div class="producto">
+    <h3>SHAMPOO S.O.S</h3>
+    <p class="precio">$33.000</p>
+    <img src="https://purpuremakeup.com/cdn/shop/files/SHAMPOO_RITUAL_BOTANICO.webp?v=1756833540"alt="shampoo s.o.s">
+    <h4>Shampoo de cebolla y argán con activo de crecimiento acelerado. Repara, fortalece y disminuye la caída. Cabello fuerte y brillante.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO CONTROL GRASA</h3>
+    <p class="precio">$33.000</p>
+    <img src="https://cuidadocapilar.co/wp-content/uploads/2025/03/SH-Aji-Ritual-100.jpg"alt="shampoo control grasa">
+    <h4>Shampoo de menta y ají con activo de crecimiento acelerado. Controla la descamación, fortalece desde la raíz y disminuye la caída.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO CONTROL CASPA</h3>
+    <p class="precio">$33.000</p>
+    <img src="https://cuidadocapilar.co/wp-content/uploads/2025/03/SH-Romero-Ritual-100.jpg"alt="shampoo control caspa">
+    <h4>Shampoo de romero y eucalipto con activo de crecimiento acelerado. Regula el exceso de grasa sin resecar, aporta frescura y disminuye la caída.</h4>
+</div>
+
+<div class="producto">
+    <h3>MASCARILLA BOMBA BOTANICA</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://cuidadocapilar.co/wp-content/uploads/2025/03/Mascarilla-SOS-Ritual-100.jpg"alt="mascarilla bomba botanica">
+    <h4>Mascarilla de colágeno y biotina que repara profundamente, disminuye la caída y acelera el crecimiento y reduce frizz 72%. Con colágeno, biotina y aceites naturales.</h4>
+</div>
+
+<div class="producto">
+    <h3>TERMOPROTECTOR DESENREDANTE</h3>
+    <p class="precio">$22.000</p>
+    <img src="https://www.almacensandra.com/cdn/shop/files/PAGINA-WEB-2025-35-scaled.jpg?v=1749830470"alt="termoprotector deserendante">
+    <h4>Perfume capilar 3 en 1 con feromonas, sin alcohol y que controla el frizz. 
+<ul>
+  <li>Perfuma con aroma floral y juvenil</li>
+  <li>Perfuma con aroma sensual y duradero</li>
+</ul></h4>
+</div>
+
+
+<h2 id="milagros">🏷️ MARCA MILAGROS HERBAL</h2>
+
+
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFI82uxCic_0Kan5NdqEDWjv5Delrb3cp9wQ&s" alt="Logo Milagros Herbal">
+
+
+<div class="producto">
+    <h3>SHAMPOO MILAGRO HERBAL</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Shampoo-Fondo-blanco.png?v=1759866802" alt="Shampoo milagro herbal">
+    <h4>Shampoo de romero sin sal para cabello graso que fortalece, controla la grasa, reduce la caída y estimula un crecimiento saludable, gracias a su fórmula con aminoácidos, romero, cebolla roja y jengibre.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO CRECIMIENTO CON EXTRATO DE CEBOLLA Y PEPTIDOS</h3>
+    <p class="precio">$41.000</p>
+    <img src="https://monimotrends.com/cdn/shop/files/IMG-5549.webp?v=1760584617&width=1946" alt="Shampoo crecimiento con extracto de cebolla y peptidos ">
+    <h4>Este shampoo, que además tiene jengibre y aceite de argán, estimula el crecimiento, aporta energía y fortaleza desde la raíz, además, le devuelve al cabello un aspecto saludable, brillante y lleno de movimiento.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO ULTRA NUTRITIVO PREMIUM</h3>
+    <p class="precio">$37.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Ultra-Fondo-blanco.png?v=1759866863"alt="shampoo ultra nutritivo premium">
+    <h4>Formulado con cristales de aloe vera (sábila) 100% natural y extracto de romero, es el tratamiento ideal para cabellos decolorados, con caída o dañados ya que hidrata profundamente, reduce el frizz y estimula un crecimiento saludable.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO EMERGENCIA CAPILAR</h3>
+    <p class="precio">$34.000</p>
+    <img src="https://iconikabeauty.com/wp-content/uploads/2024/04/EmergenciaCapilar-scaled-2.webp" alt="shampoo emergencia capilar">
+    <h4>Está formulado para cabellos con crecimiento lento, caída, porosidad, puntas secas y poco volumen. Este shampoo, con biotina y queratina, y otros 10 ingredientes activos, es tu aliado perfecto para devolverle vida y resistencia a tu pelo.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO ANTICASPA PRO CRECIMIENTO</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Anti-caspa-Fondo-blanco_2.png?v=1764963245" alt="shampoo anticaspa pro crecimiento">
+    <h4>Fortalece el cabello desde la raíz, estimula y promueve el crecimiento. Con estudios clínicos que garantizan y comprueban su eficacia sobre la intensidad de la caspa.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO MAGIA CAPILAR</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Magia-Fondo-blanco.png?v=1759866965" alt="shampoo magia capilar">
+    <h4>Es ideal para cabello seco o rizado. Revitaliza cada hebra capilar seca o dañada e hidrata profundamente gracias al ácido hialurónico, dejando el cabello sedoso, brillante y con aspecto saludable.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO EXFOLIANTE CAPILAR</h3>
+    <p class="precio">$33.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Shampoo-Exfoliante-fondo-blanco_2.png?v=1760713656&width=1500" alt="shampoo exfoliante capilar">
+    <h4>Limpia, revitaliza y despierta la belleza natural de tu cabello con nuestro Shampoo Exfoliante. Sus cristales de azúcar eliminan impurezas, residuos y células muertas del cuero cabelludo, estimulando la renovación celular y preparando la raíz para un crecimiento saludable.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO SECO VOLUMINAZOR</h3>
+    <p class="precio">$37.000</p>
+    <img src="https://surticosmeticosb2c.vtexassets.com/arquivos/ids/174806-800-auto?v=638907182807400000&width=800&height=auto&aspect=true" alt="shampoo seco voluminazor">
+    <h4>Su innovadora fórmula con almidón de maíz y arroz absorbe el exceso de grasa, dejando tu cabello fresco y ligero al instante. Las proteínas hidrolizadas de trigo y arroz nutren desde la raíz y aportan un efecto voluminizante para un acabado espectacular.</h4>
+</div>
+
+<div class="producto">
+    <h3>TRATAMIENTO BIO REPARADOR CAPILAR</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57gegn0QHQXXCNBs8xp638IXOflwJV8V4Uw&s" alt="tratamiento bio reparador capilar">
+    <h4>Su fórmula avanzada es experta en repolarizacion capilar: crea una capa protectora frente a agresiones externas y rayos UV, evitando el daño y la pérdida de brillo.</h4>
+</div>
+
+<div class="producto">
+    <h3>TRATAMIENTO CAPILAR A BASE DE FRUTAS</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Frutas-fondo-blanco_1401cd68-1b56-4526-9364-ecd6f12db4f4.jpg?v=1759867825" alt="tratamiento capilar a base de frutas">
+    <h4>Su fórmula artesanal exclusiva, enriquecida con Provitamina B5, un coctel de vitaminas a base de frutas, mango, papaya, banano y más de 10 extractos naturales, así como aceites y mantequillas vegetales, estimula el crecimiento, reduce la caída y repara la fibra capilar desde la raíz hasta las puntas.</h4>
+</div>
+
+<div class="producto">
+    <h3>TRATAMIENTO NUTRICION Y CRECIMIENTO RIZOS</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Rizos-fondo-blanco_1.jpg?v=1759867888" alt="tratamiento nutricion y crecimiento rizos">
+    <h4>Tratamiento que define, nutre y fortalece los rizos, promoviendo el crecimiento y reduciendo la caída, ideal para el método curly y cabellos rizados o crespos.</h4>
+</div>
+
+<div class="producto">
+    <h3>TONICO REVITALIZANTE CAPILAR MILAGROS HERBAL</h3>
+    <p class="precio">$47.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Tonico-Fondo-blanco_1.jpg?v=1759934837" alt="tonico revitalizante capilar milagros">
+    <h4>Fortalece tu cabello desde la raíz con nuestro Tónico Revitalizante Capilar Milagro Herbal, un tónico capilar de romero que es un tratamiento intensivo diseñado para reducir la caída abundante y revitalizar el cuero cabelludo.</h4>
+</div>
+
+<div class="producto">
+    <h3>GOTAS MAGICAS CAPILARES</h3>
+    <p class="precio">$28.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Gotas-Fondo-blanco_40f76266-d1fb-48cd-b097-4c2ee16c9091.jpg?v=1759868334&width=1100" alt="gotas magicas capilares">
+    <h4>Estimula el crecimiento y fortalece tu cabello con las Gotas Mágicas Capilares Milagros. Su fórmula única prolonga la fase de crecimiento, fortalece los folículos pilosos y reduce la caída, ayudando a mejorar la densidad capilar en zonas despobladas.</h4>
+</div>
+
+<div class="producto">
+    <h3>TRATAMIENTO CAPILAR RESCATE INSTANTANEO</h3>
+    <p class="precio">$15.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRExZWkpmavu5dJbhYPmPnm-rCC2OPVluqe_g&s" alt="tratamiento capilar rescate instantaneo">
+    <h4>Repara, fortalece y revitaliza tu cabello con el Tratamiento Capilar Rescate Instántaneo El Elixir Revitalizante. Su avanzada tecnología Plex repara la fibra capilar, sella la cutícula y aumenta el brillo hasta un 20%, dejando el cabello más fuerte y saludable al instante.</h4>
+</div>
+
+<div class="producto">
+    <h3>MASCARILLA PROFESIONAL</h3>
+    <p class="precio">$68.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Mascarilla-reparacion-ambientacion2_ca2aea14-f9bd-43bf-99c1-f6c65750bdd3.jpg?v=1762953091&width=3840" alt="mascarilla profesional">
+    <h4>Revierte el daño del cabello por decoloración, tinturas, alisadores o color, restaurando las propiedades internas del cabello, promoviendo un crecimiento saludable gracias a su formulación con aminoácidos y péptidos.</h4>
+</div>
+
+<div class="producto">
+    <h3>MASCARILLA CAPILAR MIALGRO HERBAL</h3>
+    <p class="precio">$68.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy2y4xT1yx4EG1uhvwBnKAPPze6EDgq94LHQ&s" alt="mascarilla capilar milagro herbal">
+    <h4>Es una formulación de alto desempeño enriquecida con provitamina B5, péptidos de avena, keratina, microesferas de vitamina E y polisacáridos extraídos de semillas de lino y de chía que sirve para fortalecer, proteger y recuperar el cabello.</h4>
+</div>
+
+<div class="producto">
+    <h3>SERUM REVITALIZANTE</h3>
+    <p class="precio">$34.000</p>
+    <img src="https://milagrosbeauty.com/cdn/shop/files/Serum-Fondo-blanco.jpg?v=1769455756&width=1500" alt="serum revitalizante">
+    <h4>Este tratamiento de alta nutrición con óleos 100% naturales repara, fortalece y revitaliza el cabello sin dejar sensación pesada. Deja la fibra capilar suave, sedosa y visiblemente saludable desde la primera aplicación.</h4>
+</div>
+
+<div class="producto">
+    <h3>PERFUMES CAPILARES</h3>
+    <p class="precio">$33.000</p>
+    <img src="https://glowhousebeauty.com/cdn/shop/files/9.png?v=1720401044" alt="perfumes capilares">
+    <h4>Formulados con activos naturales que cuidan tu cabello, cada aroma aporta frescura, luminosidad y un toque sofisticado:
+<li>Irresistible</li>
+<li>Majestuosa</li>
+<li>Sublime</li>
+<li>Bali</li>
+<li>Gold</li>
+<li>Martina</li></h4>
+</div>
+
+
+<h2 id="clickhair">🏷️ MARCA CLICK HAIR</h2>
+
+
+<img class="logo-marca" src="https://www.ruufe.com/cdn/shop/collections/click_cosmetics_app.png?v=1724789689&width=300">
+
+
+<div class="producto">
+    <h3>SHAMPOO DE MIEL BRILLO INTENSO</h3>
+    <p class="precio">$42.000</p>
+    <img src="https://dreamoncosmetics.com/cdn/shop/files/Capturadepantalla2025-12-06162734.png?v=1765207350" alt="Shampoo de miel brillo intenso">
+    <h4>Limpiando suavemente mientras nutre el cabello maltratado y seco debido a su fusión con aceite de argán y aminoácidos que ayudan a mantener el cuero cabelludo sano, una hebra con un brillo deslumbrante y una suavidad aterciopelada.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO DE AJÍ</h3>
+    <p class="precio">$41.000</p>
+    <img src="https://www.girlymaquillaje.com/wp-content/uploads/SHAMPOO1_1.jpg-2.webp" alt="Shampoo de aji">
+    <h4>Limpia tu cabello profundamente con nuestra fórmula especializada a base de ají, limón, café y menta, diseñada para estimular la circulación en el cuero cabelludo y fortalecer desde la raíz.</h4>
+</div>
+
+<div class="producto">
+    <h3>ACONDICIONADOR DE MIEL</h3>
+    <p class="precio">$43.000</p>
+    <img src="https://clickhair.com.co/cdn/shop/files/acondicionador-miel-cabello-saludable.jpg?v=1767922098&width=1920" alt="acondicionar de miel">
+    <h4>Reduce el frizz y facilita el desenredado sin dejar el cabello pesado. La miel actúa como un humectante natural, sellando la hidratación y dejando tu cabello más suave, brillante y protegido contra los daños externos.</h4>
+</div>
+
+<div class="producto">
+    <h3>MASCARILLA DE MIEL BRILLO INTENSO</h3>
+    <p class="precio">$46.000</p>
+    <img src="https://clickhair.com.co/cdn/shop/files/mascarilla.jpg?v=1754151434" alt="mascarilla de miel brillo intenso">
+    <h4>Tratamiento con shot de miel de abejas natural que repone los aminoácidos y proteínas perdidas para sellar las cutículas, dar hidratación profunda y reparar la fibra de los cabellos maltratados, secos y opacos, proporcionándoles una suavidad aterciopelada y un brillo deslumbrante.</h4>
+</div>
+
+<div class="producto">
+    <h3>ACONDICIONADOR DE AJÍ 4 EN 1</h3>
+    <p class="precio">$41.000</p>
+    <img src="https://dreamoncosmetics.com/cdn/shop/files/Capturadepantalla2025-12-06163101_7e802a52-7e0f-426e-a6af-29fe2a6a954b.png?v=1765207939" alt="acondicionar de aji 4 en 1">
+    <h4>Este acondicionador ayuda a restaurar la hidratación natural del cabello, mejorando visiblemente su apariencia y textura, incluso en cabellos secos, opacos o maltratados.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>MIEL CAPILAR CON ARGÁN</h3>
+    <p class="precio">$53.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzmhJhh_cbXeGJq8De8pVt0dQQBKHOrAzIw&s" alt="miel capilar con argan">
+    <h4>Un producto perfecto si buscas suavidad extrema, puntas selladas, frizz controlado y ese aroma delicioso que acompaña cada movimiento de tu melena.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>PERFUME DE MIEL</h3>
+    <p class="precio">$57.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ouy8MU-h0liENZTkCONKfYYsiqUGRJ-OBg&s" alt="perfume de miel">
+    <h4>Gracias al poder nutritivo de la miel de abejas, este perfume capilar potencia el brillo natural, mejora la sedosidad y ayuda a controlar el frizz, proporcionando un acabado luminoso y elegante desde la primera aplicación.</h4>
+</div>
+
+<div class="producto">
+    <h3>SUERO RECONSTRUCTOR</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://tiendasmartina.com/cdn/shop/files/SUERO-RECONSTRUCTOR-3-768x960.jpg?v=1706393718" alt="suero reconstructor">
+    <h4>Su fórmula actúa sellando la hebra y protegiéndola de la deshidratación, la pérdida de nutrientes y el maltrato causado por herramientas de calor, exposición solar, sales, químicos y agentes ambientales.</h4>
+</div>
+
+<div class="producto">
+    <h3>ENERGIZANTE CAPILAR (MASCARILLA)</h3>
+    <p class="precio">$43.000</p>
+    <img src="https://clickhair.com.co/cdn/shop/files/energizante-capilar-cuidado-capilar__0_0_1.jpg?v=1715563547" alt="energizante capilar (mascarilla)">
+    <h4>Su fórmula avanzada, rica en proteínas y aminoácidos, acelera los procesos metabólicos del cuero cabelludo y la fibra capilar, favoreciendo el crecimiento saludable, la regeneración celular y una reparación extrema desde la raíz hasta las puntas.</h4>
+</div>
+
+<div class="producto">
+    <h3>PELINEX TÓNICO ANTICAÍDA</h3>
+    <p class="precio">$56.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3oz5NeNWKqiogwvfJxd6lNEGEaFkSRPutxw&s" alt="pelinex tonico anticaida">
+    <h4>Está diseñado para nutrir profundamente el cuero cabelludo, fortalecer el folículo piloso y estimular el crecimiento del cabello desde la raíz. Su fórmula ligera y de rápida absorción mejora la circulación capilar, ayudando a reducir la caída y aportando equilibrio, brillo y resistencia al cabello.</h4>
+</div>
+
+<div class="producto">
+    <h3>PERFUMES CAPILARES</h3>
+    <p class="precio">$44.000</p>
+    <img src="https://www.ruufe.com/cdn/shop/files/ClickHairPerfumeCapilarTodos4.jpg?v=1729003793" alt="perfumes capilares">
+    <h4>Nuestros perfumes capilares aportan brillo y suavidad, cuentan con termoprotector, reducen el frizz, nutren el cabello con aceite de argán y queratina, contienen glitter y no engrasan el cabello.</h4>
+</div>
+
+
+<h2 id="pocion">🏷️ MARCA LA POCIÓN</h2>
+
+
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIKR7aR42HfMgkHYJtEWr7sqyJI9VqSnmGA&s" alt="Logo La Poción">
+
+
+<div class="producto">
+    <h3>SHAMPOO DE REPARACION</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://surticosmeticosb2c.vtexassets.com/arquivos/ids/175558/shampoo-la-pocion-sin-sal-x440ml-4h0201.jpg?v=639001936619700000" alt="shampoo de reparacion">
+    <h4>Diseñado para limpiar a profundidad el cuero cabelludo sin resecarlo, mientras fortalece e hidrata el cabello desde la raíz. Su fórmula equilibrada con ingredientes naturales como argán, jojoba y aloe vera lo hacen ideal para todo tipo de cabello, especialmente aquellos secos o con tendencia al quiebre.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO DE CRECIMIENTO Y CONTROL DE CAIDA</h3>
+    <p class="precio">$46.000</p>
+    <img src="https://laskin.com.co/cdn/shop/files/7708162555934.jpg?v=1754497501" alt="shampoo de crecimiento y control de caida">
+    <h4>Es un shampoo estimulante con tecnología bioactiva que actúa directamente sobre el cuero cabelludo para reactivar los folículos capilares, detener la caída en un 81% y promover un crecimiento continuo, fuerte y saludable.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO CONTROL DE GRASA</h3>
+    <p class="precio">$38.000</p>
+    <img src="https://lapocion.com/cdn/shop/files/lapocion-lc-shampoo-control-grasa-front-4.png?v=1762809107" alt="Shampoo control de grasa">
+    <h4>Su fórmula combina Bicarbonato de Sodio y Bioactivos Marinos para regular el exceso de sebo, calmar irritaciones y brindar una limpieza profunda sin comprometer la salud del cabello. El resultado: un cuero cabelludo purificado, equilibrado y un cabello visiblemente más ligero y brillante.</h4>
+</div>
+
+<div class="producto">
+    <h3>BOOSTER</h3>
+    <p class="precio">$37.000</p>
+    <img src="https://lapocion.com/cdn/shop/files/pcn-LC-Reparacion-Booster-Front-WhiteBG.webp?v=1762873378&width=720" alt="booster">
+    <h4>Con tecnología avanzada de lípidos y ácido hialurónico, actúa como tratamiento independiente o potenciador al mezclarse con mascarillas, cremas o aceites. Ideal para quienes buscan resultados visibles en poco tiempo, sin complicaciones y con múltiples beneficios.</h4>
+</div>
+
+<div class="producto">
+    <h3>SPORT- TRATAMIENTO DE ULTRA PROTECCION</h3>
+    <p class="precio">$44.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsblwOTFfRmflT2M5CjLTVYQDxMlOwL2xwaQ&s" alt="sport- tratamiento de ultra proteccion">
+    <h4>Su fórmula ligera actúa como una barrera protectora diaria, manteniendo tu cabello fuerte, hidratado y con brillo natural incluso si vives en constante movimiento. Es ideal para cabellos teñidos, alisados o tratados químicamente.</h4>
+</div>
+
+<div class="producto">
+    <h3>ANCESTRAL MASCARILLA DE REPARACION</h3>
+    <p class="precio">$38.000</p>
+    <img src="https://catalinavivas.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTU2MzA2OCwicHVyIjoiYmxvYl9pZCJ9fQ==--b2784768e082238eb4c1ec7ca6ea4bca997aa9f6/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZml0IjpbODAwLDgwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1420d7fd3d20057726f0ef3c0043db24ca0403be/pocion-lc-reparacion-mascarilla-ancestral-cover.jpg?locale=es" alt="ancestral mascarilla de reparacion">
+    <h4>Su función es reparar intensamente la fibra capilar, mejorar la elasticidad y devolver la vitalidad a cabellos dañados por procesos químicos, calor o exposición ambiental.</h4>
+</div>
+
+<div class="producto">
+    <h3>B8 OLEO CAPILAR MULTIFUNCIONAL</h3>
+    <p class="precio">$48.000</p>
+    <img src="https://luegopagocdn.azureedge.net/content-process/products-images/prod/3569/d76a76c1-be47-4e9d-b1d7-0f5179367a47.webp" alt="b8 oleo capilar multifuncional">
+    <h4>Es un óleo capilar natural y multifuncional, diseñado para reparar, nutrir y sellar el cabello. Su fórmula anti-quiebre ayuda a proteger la hebra capilar del daño físico, químico y ambiental, aportando suavidad, brillo y manejabilidad. Ideal para uso diario, sin dejar sensación grasosa.</h4>
+</div>
+
+<div class="producto">
+    <h3>B8 TERMOPROTECTOR</h3>
+    <p class="precio">$49.000</p>
+    <img src="https://cuidadocapilar.co/wp-content/uploads/2025/03/B8-Termoprotector-pocion-100.jpg" alt="b8 termoprotector">
+    <h4>Es un termoprotector capilar con activos de la Amazonía, diseñado para proteger el cabello únicamente de herramientas térmicas (planchas, secadores, pinzas), neutralizar cargas eléctricas y mejorar su apariencia general.</h4>
+</div>
+
+<div class="producto">
+    <h3>DUAL CREMA PARA PEINAR DE REPARACION</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWV3xsk17368XOJO5ZmIFeZehtrZRzVvNS6w&s" alt="dual crema para peinar de reparacion">
+    <h4>Su fórmula ligera y adaptativa permite usarla tanto en cueros cabelludos secos como grasos, ayudando a mejorar la definición, la manejabilidad y la salud capilar en la rutina diaria.</h4>
+</div>
+
+<h2 id="leche">🏷️ MARCA LECHE PAL PELO</h2>
+
+
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFcgI2sUb-MqShc1UbnviMeSzfOKq2zt8HQ&s" alt="Logo Leche pal Pelo">
+
+
+<div class="producto">
+    <h3>SHAMPOO TRADICIONAL</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://lechepalpelo.com/cdn/shop/files/SHAMPOO-TRADICIONAL.png?v=1725992422" alt="shampoo tradicional">
+    <h4>Es ideal para quienes buscan una alternativa natural para limpiar su cabello y mantenerlo saludable. Asegura una limpieza profunda al barrer los residuos dejados por la acumulación de otros productos y elimina las grasas e impurezas, devolviéndole el brillo y suavidad al pelo.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>RECONSTRUCTOR INSTANTANEO (SHAMPOO)</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://m.media-amazon.com/images/I/51NeispkYxL._AC_UF1000,1000_QL80_.jpg" alt="reconstructor instantaneo (shampoo)">
+    <h4>Al usarla, esta mascarilla capilar especializada en nutrir el córtex, va a reparar la fuerza y vitalidad del pelo, mientras que sus ingredientes naturales a base de proteínas vegetales, aceites esenciales y aloe vera aportarán brillo, suavidad e hidratación.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>TRATAMIENTO TERMOPROTECTOR EN CREMA</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://m.media-amazon.com/images/I/51BxSUWKLkL._AC_UF1000,1000_QL80_.jpg" alt="Tratamiento termoprotector en crema">
+    <h4>Protege el cabello del calor proveniente de los rayos UV del sol y herramientas térmicas como la plancha, el secador y el rizador. Además, aporta brillo, facilidad de peinado, suavidad e hidratación, nutriendo sustancialmente el cabello y mejorando su apariencia.</h4>
+</div>
+
+<div class="producto">
+    <h3>TERMOPROTECTOR LIQUIDO</h3>
+    <p class="precio">$30.000</p>
+    <img src="https://m.media-amazon.com/images/I/51ARTz1HUGL._AC_UF1000,1000_QL80_.jpg" alt="Tratamiento termoprotector en crema">
+    <h4>ofrece una opción más versátil y ligera para que lo puedas llevar a todas partes y así mantener el cabello protegido de los rayos UV, la resequedad del aire y herramientas térmicas estés donde estés y en todo momento.</h4>
+</div>
+
+<div class="producto">
+    <h3>FINISH CHIA OIL</h3>
+    <p class="precio">$30.000</p>
+    <img src="https://surticosmeticosb2c.vtexassets.com/arquivos/ids/175712/tratamiento-reparapuntas-leche-pal-pelo-fin-3819617-3.jpg?v=639027037637830000">
+    <h4>Es un producto diseñado a base de aceites para el cabello que repara y mejora el acabado de las puntas, controlando el frizz y brindando más brillo y suavidad al pelo, sin generar sensación de grasa ni peso cosmético.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO REGENERADOR INTENSIVO</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://lechepalpelo.com/cdn/shop/files/SHAMPOO_REGENERADOR_2_f6917b65-2c0e-4374-a557-1fb023cd1364.png?v=1718203329&width=500">
+    <h4>Su fórmula con extracto de aloe vera, borojó y leche de coco penetra la fibra capilar, brindándole fortalecimiento, hidratación y suavidad.</h4>
+</div>
+
+<div class="producto">
+    <h3>MASCARILLA REGENERADOR INTENSIVO 7 OLEOS</h3>
+    <p class="precio">$53.000</p>
+    <img src="https://lechepalpelo.com/cdn/shop/files/BOTELLA_liquido_LECHE_1.png?v=1726607726&width=1200">
+    <h4>Su fórmula avanzada es impulsada por una mezcla de 7 aceites altamente beneficiosos que nutren, hidratan y revitalizan profundamente el cabello, proporcionándole suavidad y textura lujosa, brillo radiante, mejorando su elasticidad y brindándole hidratación intensamente revitalizante.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO PROTECCION PLUS</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://lechepalpelo.com/cdn/shop/files/SHAMPOOFRONTAL_2.png?v=1720138380">
+    <h4>Está diseñado para brindar una limpieza suave y no agresiva, que va a restaurar y proteger el cabello que ha sufrido daños por tratamientos químicos como tintes, keratinas, rizados, decoloraciones o alisados.</h4>
+</div>
+
+<div class="producto">
+    <h3>MASCARILLA HIDROSELLANTE</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://lechepalpelo.com/cdn/shop/files/MASCARILLAHIDROSELLANTEFRONTAL_31c37c3e-d6fd-4205-9a19-2dc7439a135b.png?v=1720138542">
+    <h4>Esta es la que tiene una función hidratante más profunda, ya que ha sido diseñada especialmente para proteger el color y textura de los cabellos que han sido sometidos a procesos químicos bastante abrasivos como la keratina, decoloración, tintes, rizados o alisados permanentes, entre otros.</h4>
+</div>
+
+<div class="producto">
+    <h3>TERMOPROTECTOR PROTECCION PLUS</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://lechepalpelo.com/cdn/shop/files/TERMOPROTECTORFRONTAL_1.png?v=1720138637">
+    <h4>Crea una barrera protectora contra herramientas térmicas y rayos UV. Fortalece la hebra capilar y mantiene el color, logrando un pelo con brillo y sin frizz. Sus activos han sido diseñados para prolongar la vida útil de los procesos químicos y cerrar la cutícula.</h4>
+</div>
+
+<div class="producto">
+    <h3>MASCARILLA WOW</h3>
+    <p class="precio">$92.000</p>
+    <img src="https://lechepalpelo.com/cdn/shop/files/MASCARILLA-WOW.png?v=1739231634">
+    <h4>Esta mascarilla está formulada para reducir el frizz, brindar mayor manejabilidad  y combatir la onda del cabello, dando suavidad, brillo y manejabilidad. Además, fortalece y repara desde la raíz hasta las puntas, dejándote con un cabello saludable.</h4>
+</div>
+
+<div class="producto">
+    <h3>SPLASH CAPILARES</h3>
+    <p class="precio">$28.000</p>
+    <img src="https://media.falabella.com/falabellaCO/126679209_01/w=1004,h=1500,fit=pad" class="img-linea">
+<img src="https://lechepalpelo.com/cdn/shop/files/R-splash_capilarLOVE.png?v=1762270290&width=1200" class="img-linea">
+<img src="https://lechepalpelo.com/cdn/shop/files/SPLASHCELESTIALBLUEFRONTAL.png?v=1762007153" class="img-linea">
+    <h4>Formulado con provitamina B5 y aminoácidos, este splash no solo sella las puntas y protege contra los rayos UV, sino que también realza el brillo natural de tu cabello: 
+<li>Passion</li>
+<li>Love</li>
+<li>Celestial blue</li></h4>
+</div>
+
+
+<h2 id="ole">🏷️ MARCA OLE CAPILAR</h2>
+
+
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfKvr9-AwORoxfn5m_bsrsmDNtK1Z7Y26Dew&s" alt="Logo Ole Capilar">
+
+
+<div class="producto">
+    <h3>SHAMPOO ANTIGRASA CEBOLLA & GENGIBRE</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://purpuremakeup.com/cdn/shop/files/WhatsAppImage2025-05-22at16.29.44.webp?v=1747949834&width=720" alt="shampoo antigrasa cebolla y gengibre">
+    <h4>Un shampoo antigrasa formulado con ingredientes naturales que purifican, equilibran y fortalecen el cuero cabelludo desde la raíz. Ideal para quienes buscan una limpieza profunda sin resecar, con sensación de frescura y un cuero cabelludo en balance.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO CRECIMIENTO REVITALIZANTE DE ARROZ</h3>
+    <p class="precio">$37.000</p>
+    <img src="https://exitocol.vtexassets.com/arquivos/ids/30409278/shampoo-revitalizante-arroz-y-linaza.jpg?v=638922763746330000" alt="shampoo crecimiento revitalizante de arroz">
+    <h4>Un shampoo revitalizante formulado para estimular el crecimiento del cabello, fortalecer desde la raíz y controlar el frizz sin resecar. Limpia con suavidad mientras nutre profundamente, ideal para cabellos que necesitan reparación, hidratación y equilibrio.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO HIDRATANTE CANELA, COCO Y MIEL</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://prebel.vtexassets.com/arquivos/ids/193947-800-auto?v=638895781944930000&width=800&height=auto&aspect=true" alt="shampoo hidratante canela, coco y miel">
+    <h4>Un shampoo de hidratación profunda que limpia con eficacia pero sin resecar, dejando el cabello suave, brillante y protegido desde la raíz hasta las puntas. Formulado con ingredientes naturales que nutren, fortalecen y restauran el equilibrio del cabello seco.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO 2 EN 1 CONTROL FRIZZ CON VINAGRE DE MANZANA</h3>
+    <p class="precio">$37.000</p>
+    <img src="https://www.pigmentta.com/wp-content/uploads/2026/01/Shampoo-2-en-1-Control-Frizz-con-Vinagre-de-Manzana.jpg" alt="shampoo 2 en 1 control frizz con vinagre de manzana">
+    <h4>Diseñado para quienes buscan un control de frizz real sin pasos extras, este 2 en 1 aporta suavidad inmediata, reduce el volumen esponjado y facilita el peinado. Es el complemento perfecto del Termoprotector & Desenredante Aceite de Acai.</h4>
+</div>
+
+<div class="producto">
+    <h3>ACONDICIONAR LONG LASTING JARABE DE MANGO</h3>
+    <p class="precio">$37.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYviOVZi_PeJhNSGfNMBYXpbRQR4i8KBLUdA&s" alt="acondicionar long lasting jarabe de mango">
+    <h4>Un acondicionador reparador que hidrata a profundidad, fortalece y protege el cabello dañado por procesos químicos o el uso frecuente de herramientas de calor. Diseñado para devolverle suavidad, brillo y vitalidad al cabello que pide un rescate urgente.</h4>
+</div>
+
+<div class="producto">
+    <h3>ACONDICIONAR SUAVIDAD ALGODON & COCO</h3>
+    <p class="precio">$36.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ke3Fxb9LBhWIWR93SPase7LA9rAwhq-KBw&s" alt="acondicionar suavidad algodón & coco">
+    <h4>Un acondicionador de textura ligera que hidrata intensamente sin dejar residuos ni sensación pesada.
+Ideal para quienes buscan suavidad, brillo y desenredo sin comprometer la ligereza del cabello.</h4>
+</div>
+
+<div class="producto">
+    <h3>TERMOPROTECTOR & DESENREDANTE ACEITE DE ACAI</h3>
+    <p class="precio">$42.000</p>
+    <img src="https://houseofbeauty.com.co/cdn/shop/files/ole-cabello-ole-termoprotector-desenredante-de-acai-y-coco-250ml-ole-termoprotector-desenredante-de-acai-y-coco-250ml-1149156356.jpg?v=1742394168" alt="termoprotector & desenredante aceite de acai">
+    <h4>Un termoprotector desenredante que protege tu cabello del calor, los rayos UV y el daño ambiental.
+Hidrata, suaviza y ayuda a preservar el color, mientras desenreda sin esfuerzo y deja el cabello manejable y brillante. Una fórmula liviana, efectiva y pensada para cuidar cada hebra.</h4>
+</div>
+
+<div class="producto">
+    <h3>SPRAY ANTI-HUMEDAD ANTI-FRIZZ CON RESTART PROO</h3>
+    <p class="precio">$35.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkF6QLMhDBFLEq5z2t4WUc-BaJ8MpbI88hg&s" alt="spray anti-humedad anti-frizz con restart">
+    <h4>Un spray anti-frizz que impermeabiliza el cabello y lo protege de la humedad desde la primera aplicación.
+Gracias a su tecnología Restart Pro, crea una microcapa ultra ligera que envuelve cada hebra, formando una barrera resistente al encrespamiento, sin peso ni rigidez.</h4>
+</div>
+
+<div class="producto">
+    <h3>CREMA DEFINIDORA ANTI-FRIZZ NUEZ DEL MAGDALENA</h3>
+    <p class="precio">$29.000</p>
+    <img src="https://catalinavivas.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjE0MjI3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--faf0a2f729e48ecfb2f159fd88845437d587a460/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2ZpdCI6WzgwMCw4MDBdfSwicHVyIjoidmFyaWF0aW9uIn19--bd5a2de8e0d11957373f04c83dd708213bfe6ce6/crema%20peinadora%20antifrizz%20ole%20capilar.webp?locale=es" alt="crema definidora anti-frizz nuez del magdalena">
+    <h4>Una crema de peinar ligera pero poderosa que controla el frizz, define ondas y rizos, y sella puntas para lograr un acabado suave, brillante y lleno de movimiento. Es tu finalizador ideal para llevar un cabello impecable, donde y cuando lo necesites.</h4>
+</div>
+
+<div class="producto">
+    <h3>OLEO BIFASICO DE UCHUVA HIDRATANTES DE PUNTAS</h3>
+    <p class="precio">$30.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGtOpoOPc8ZcecpBT-4-JrjtNiTRZH7Ey5yg&s" alt="oleo bifasico de uchuva hidratantes de puntas">
+    <h4>Un óleo bifásico hidratante en gotas, formulado con una mezcla nutritiva de aceites esenciales y extracto puro de uchuva. Hidrata, sella, suaviza y revitaliza el cabello sin dejar sensación grasa, con un aroma frutal delicioso a durazno.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>PERFUMES CAPILARES SIN ALCOHOL</h3>
+    <p class="precio">$24.000</p>
+    <img src="https://www.magnacosmetics.co/wp-content/uploads/2025/08/0z0327-1.jpg" alt="perfumes capilares sin alcohol">
+    <h4>Un perfume capilar sin alcohol sirve para perfumar el cabello sin dañarlo; no reseca ni maltrata el pelo.
+<li>Flor de azúcar</li> 
+<li>Flor de cereza</li> 
+<li>Flor de fuego</li> </h4>
+</div>
+
+
+
+<h2 id="lehit">🏷️ MARCA LEHIT</h2>
+
+
+<img class="logo-marca" src="https://images.squarespace-cdn.com/content/v1/5ca3610eab1a623e7c2f2398/1562155117971-6L7SZ0IBQW28QOYG271W/lehit-naturalmente.jpg" alt="Logo Lehit">
+
+
+<div class="producto">
+    <h3>SHAMPOO COCTEL 8 EN 1 LIBRE DE SAL</h3>
+    <p class="precio">$24.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HEm-Y7WOoca8ynQdi1312F6FBE998A-pEA&s" alt="shampoo coctel 8 en 1 libre de sal">
+    <h4>Este tipo de shampoo está diseñado para cuidar tu cabello de forma más suave y nutritiva, en especial si está seco, dañado o tratado químicamente.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO SIN SAL CEBOLLA Y JENGIBRE</h3>
+    <p class="precio">$21.000</p>
+    <img src="https://palatsi.com.co/cdn/shop/products/WhatsAppImage2021-07-30at10.41.57_1_600x.jpg?v=1627663359" alt="Shampoo sin sal cebola y jengibre">
+    <h4>Un shampoo de cebolla sin sal está formulado para limpiar tu cabello de forma suave mientras aprovecha las propiedades de los extractos naturales como cebolla y jengibre, que suelen estar incluidos por sus beneficios para el cuero cabelludo y el cabello.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO SIN SAL CAPULLO DE GUSANO DE SEDA</h3>
+    <p class="precio">$24.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrTsBnICVO95htY6z0680Z_GyP34IcM5KsVw&s" alt="Shampoo Capullo de Gusano de Seda Lehit">
+    <h4>Un shampoo sin sal con extracto de capullo de gusano de seda está diseñado para limpiar y cuidar tu cabello de manera suave, nutritiva e hidratante, especialmente si lo tienes seco, dañado o tratado químicamente.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>SHAMPOO SIN SAL QUERATINA</h3>
+    <p class="precio">$27.000</p>
+    <img src="https://exitocol.vtexassets.com/arquivos/ids/23423636/lehit-shampoo-sin-sal-queratina.jpg?v=638560532867270000" alt="Shampoo Queratina Lehit">
+    <h4>Un shampoo sin sal con queratina está diseñado para limpiar y cuidar el cabello de forma suave y nutritiva, ideal si tu cabello está seco, dañado, frágil o ha recibido tratamientos químicos (como tintes o alisados).</h4>
+</div>
+
+
+<div class="producto">
+    <h3>TRATAMIENTO 18 EN 1 CAPILAR - REPOLARIZADOR EN FRIO</h3>
+    <p class="precio">$27.000</p>
+    <img src="https://product-images.farmatodo.com/t1StcY9718qPzZtw0uW1UvZMggqcbkc1Uwhti12nEw6_UadEcUJpl2j1btiOB1zPiIFPxanR0XxSJlJ_dSskb6CGf2b7HXNcZ0LptO4K6jwY8lvycA=638560532867270000" alt="Tratamiento 18 en 1 Lehit">
+    <h4>El Tratamiento Capilar 18 en 1 Repolarizador en Frío de Lehit sirve para hidratar, reparar y fortalecer el cabello dañado, reducir el frizz, darle suavidad y brillo, y protegerlo sin necesidad de aplicar calor.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>PRE-SHAMPOO ACIDO HIALURONICO</h3>
+    <p class="precio">$27.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagr09JAQk_LKVRfk0vqDvY_T_T5haVa9IFw&s" alt="Pre-Shampoo Ácido Hialurónico Lehit">
+    <h4>Es un producto que se aplica antes del shampoo y que, gracias a su fórmula con ácido hialurónico, ayuda a hidratar profundamente el cabello, desenredarlo y fortalecerlo, evitando la caída por quiebre y dejando el pelo suave y manejable antes del lavado.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>LECHE TRATAMIENTO - TERMOPROTECTOR</h3>
+    <p class="precio">$26.000</p>
+    <img src="https://cdnx.jumpseller.com/los-estilistas/image/34102762/resize/640/640?1681345217" alt="Leche Tratamiento Lehit">
+    <h4>Es un producto que se aplica en el cabello para protegerlo del calor de herramientas como secadores, planchas o rizadores, al mismo tiempo que lo nutre, hidrata y repara.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS ACIDO HIALURONICO X 3</h3>
+    <p class="precio">$24.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGxIfvJDjuq7lWb45z7ZjtvdCVCllrf3TGg&s" alt="Ampolletas Ácido Hialurónico Lehit">
+    <h4>Las ampolletas de Ácido Hialurónico LEHIT sirven para hidratar profundamente, reparar y revitalizar el cabello, especialmente cuando está seco, opaco o maltratado.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS CELULAS MADRE X 3</h3>
+    <p class="precio">$24.000</p>
+    <img src="https://i0.wp.com/disarbel.co/wp-content/uploads/2022/11/eZy-Watermark_17-11-2022_09-58-57a.m..jpg?fit=1600%2C1600&ssl=1" alt="Ampolletas Células Madre Lehit">
+    <h4>Es un tratamiento concentrado para el cabello que usa la tecnología de células madre vegetales para reparar profundamente, hidratar y dar brillo al cabello, ayudando a que se vea más saludable, más fuerte y con mejor textura.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS 18 EN 1 REPOLARIZADOR</h3>
+    <p class="precio">C/U $5.000</p>
+    <img src="https://tiendalehit.com/cdn/shop/products/Captura18en1_1200x1200.png?v=1681776786" alt="Ampolletas 18 en 1 Lehit">
+    <h4>Son ampolletas capilares con fórmula "18 en 1" que proporcionan múltiples beneficios al cabello en cada aplicación, especialmente si está seco, dañado o maltratado, ayudando a que luzca más sano, hidratado y manejable.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS REPOLARIZADOR KERATINE Y ADN</h3>
+    <p class="precio">C/U $5.000</p>
+    <img src="https://tiendalehit.com/cdn/shop/products/Captura18en1_1200x1200.png?v=1681776786" alt="Ampolletas Keratine y ADN Lehit">
+    <h4>Un repolarizador con keratina y ADN es un tratamiento capilar intensivo que utiliza keratina (una proteína estructural del cabello) y ADN o ingredientes que revitalizan desde dentro para reparar, fortalecer e hidratar la fibra capilar, dejando el cabello más suave, manejable y con brillo.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS SEMILLAS DE LINO</h3>
+    <p class="precio">C/U $5.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDkuSfoL2Ezz2JeXMFOuQrT3xqGMkuK32xyQ&s" alt="Ampolletas Semillas de Lino Lehit">
+    <h4>Son tratamientos concentrados que aportan nutrición, hidratación y suavidad profunda al cabello, ayudando a fortalecerlo, reducir el frizz y mejorar el brillo y la manejabilidad.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS KERACRECE 10 TRATAMIENTO</h3>
+    <p class="precio">C/U $5.000</p>
+    <img src="https://locatelcolombia.vtexassets.com/arquivos/ids/225368/7703143294819_1_AMPOLLA-LEHIT-KERACRECE-10-X-13ML.jpg?v=637245576694330000" alt="Ampolletas Keracrece 10 Lehit">
+    <h4>Están formuladas con una combinación de nutrientes naturales como vitamina C, provitamina A, proteínas y aminoácidos, que actúan de forma intensiva sobre la fibra capilar, aportando múltiples beneficios.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS LISOS HIDROFLUIDOS</h3>
+    <p class="precio">C/U $5.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFBoRG52y6eLp9Z-3DMra4vVUQ6SU2sarylA&s" alt="Ampolletas Lisos Hidrofluidos Lehit">
+    <h4>Son tratamientos capilares intensivos en formato de ampolleta con fórmula hidrofluida que hidratan, nutren y revitalizan el cabello liso, dejándolo más suave, manejable y con brillo.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS ACEITE DE ARGAN</h3>
+    <p class="precio">C/U $5.000</p>
+    <img src="https://http2.mlstatic.com/D_NQ_NP_755249-MLA99814288023_112025-O.webp" alt="Ampolletas Aceite de Argán Lehit">
+    <h4>Son tratamientos capilares intensivos en formato de ampolleta con fórmula hidrofluida que hidratan, nutren y revitalizan el cabello liso, dejándolo más suave, manejable y con brillo.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS CRESPOS</h3>
+    <p class="precio">C/U $5.000</p>
+    <img src="https://lh3.googleusercontent.com/x79Gaw4HXwUVgbp6YShGcYOXIgRspTFBVAGGrU0eC_KG5QEw31zE6QtOHU4EMocAj3ODPtu0Zzbwmx4Rd3_mJ2nn6T59LFm1jpPR09_KIZG9eFM=s360" alt="Ampolletas Crespos Lehit">
+    <h4>Las ampolletas capilares diseñadas para cabello crespo o rizado sirven para nutrir, hidratar y definir los rizos, dejando el cabello más suave, manejable y con menos frizz.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>AMPOLLETAS BOMBA PLEX</h3>
+    <p class="precio">C/U $5.000</p>
+    <img src="https://tiendalehit.com/cdn/shop/files/WhatsAppImage2025-10-02at15.25.47_2048x.jpg?v=1760639920" alt="Ampolletas Bomba Plex Lehit">
+    <h4>Son un tratamiento capilar intensivo en formato concentrado pensado para reparar, nutrir y fortalecer el cabello dañado y opaco.</h4>
+</div>
+
+
+<div class="producto">
+    <h3>TRATAMIENTO EN SOBRE</h3>
+    <p class="precio">C/U $4.000</p>
+    <img src="https://nasabeautycol.com/cdn/shop/products/D_NQ_NP_712952-MCO52237397913_112022-O.webp?v=1678921289" alt="Tratamientos en Sobre Lehit">
+    <h4>
+        - Células Madre<br>
+        - 8 en 1<br>
+        - Aceite de Argan<br>
+        - Capullo de Gusano de Seda<br>
+        - Cebolla y Gengibre<br>
+        - Marula & Omega<br>
+        - Keratine<br>
+        - Aceite de Coco<br>
+        - Placenta Vegetal<br>
+        - Afrofrizz (cabello Afro, crespo y rizado)<br>
+        - Cannabis<br>
+        - Aceite de Aguacate<br>
+        - Leche<br>
+        - Colágeno<br>
+        - Semillas de Lino<br>
+        - Complejo Biológico<br>
+        - Ortiga, Limón y Menta<br>
+        - Keracrece 10
+    </h4>
+</div>
+
+
+<h2 id="skala">🏷️ MARCA SKALA</h2>
+
+
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwhRQOdRgqGQ3B0In59u5DNF8o0GSbprzpOw&s" alt="Logo Skala">
+
+
+<div class="producto">
+    <h3>TRATAMIENTOS DE SKALA</h3>
+    <img src="https://districo.b-cdn.net/wp-content/uploads/2025/06/Skala-Tratamientos-Todos-2025.png" alt="Tratamientos Skala">
+    <h4>Los tratamientos de Skala nutren e hidratan el cabello, mejorando su fuerza, textura y brillo, sin químicos agresivos, especialmente para el cuidado de las rizas.</h4>
+</div>
+
+<h2 id="dromatic">🏷️ MARCA DROMATIC</h2>
+
+
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBXpEaEnTPvKwC_MxmL5WEysQ7LHVIvpniRA&s" alt="Logo dromatic">
+
+<div class="producto">
+    <h3>CARBOMERO</h3>
+<p class="precio">
+  $18.000 <span class="ml">(60 ml)</span>
+  <span class="sep">|</span>
+  $27.000 <span class="ml">(125 ml)</span>
+  <span class="sep">|</span>
+  $45.000 <span class="ml">(250 ml)</span>
+</p>
+    <img src="https://www.comprardromatic.com/wp-content/uploads/2025/12/Carbomero-dromatic-termoprotector.jpeg" alt="carbomero">
+    <h4>Producto de uso diario que deja el cabello más liso, suave y con agradable aroma. Su fórmula libre de sal es ideal para cabellos tinturados, ya que protege el color y reduce el daño. Brinda protección térmica, facilita el peinado, controla el frizz y el esponjado, elimina la estática y previene la caída por quiebre. Enriquecido con keratina, vitamina E y panthenol, hidrata, fortalece y revitaliza la fibra capilar.</h4>
+</div>
+
+<div class="producto">
+    <h3>POLIMERO</h3>
+    <p class="precio">
+  $18.000 <span class="ml">(60 ml)</span>
+  <span class="sep">|</span>
+  $27.000 <span class="ml">(125 ml)</span>
+  <span class="sep">|</span>
+  $45.000 <span class="ml">(250 ml)</span>
+</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSakowgwDMwuWbl4fs9Mubl9XcXDdf9i4KbOQ&s" alt="POLIMERO">
+    <h4>Proporciona brillo extremo al instante. Elimina cargas electrostáticas. Aporta a su cabello textura suave y agradable al tacto. Contiene filtro solar que protege el color de su cabello.</h4>
+</div>
+
+<div class="producto">
+    <h3>SERUM DE SILICONA</h3>
+    <p class="precio"> $27.000</p>
+    <img src="https://www.comprardromatic.com/wp-content/uploads/2025/12/Serum-de-silicona-COMPRARDROMATIC-250-ml.jpeg" alt="serum dde silicona">
+    <h4>Tratamiento ideal para reparar e hidratar profundamente el cabello, gracias a su fórmula nutritiva con ingredientes naturales como taurina, colágeno, biotina, aminoácidos, vitamina E, provitamina B5, keratina y aloe vera.</h4>
+</div>
+
+<div class="producto">
+    <h3>DEPILATORIO INSTANTANEO</h3>
+        <p class="precio">
+  $22.000 <span class="ml">(60 ml)</span>
+  <span class="sep">|</span>
+  $37.000 <span class="ml">(125 ml)</span>
+  <span class="sep">|</span></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNCXDChGyEWI-6ZoNI8_-Z3zbbZitVxS6ApA&s" alt="depilatorio instantaneo">
+    <h4>Esta exclusiva fórmula en gel elimina el vello a ras rápidamente, de manera suave, fácil y eficaz, dejando su piel sedosa y agradable al tacto, evitando la irritación, el riesgo de cortes y la textura áspera que causan las cuchillas de afeitar.</h4>
+</div>
+
+<div class="producto">
+    <h3>SHAMPOO ZERO SAL KERATINA</h3>
+    <p class="precio"> $40.000</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZHUf8uN0xppO8u0Bita7rxESubw_Mbvh8Q&s" alt="depilatorio instantaneo">
+    <h4>Está recomendado especialmente para cabellos tinturados porque contribuye a una mayor duración del color, su maravillosa fórmula desarrollada con tecnología de última generación minimiza el daño producido por los iones contenidos en la sal que producen oxidación en los cabellos tinturados.</h4>
+</div>
+
+<div class="producto">
+    <h3>ACLARADOR DE CABELLOS</h3>
+    <p class="precio">
+  $23.000 <span class="ml">(85 ml)</span>
+  <span class="sep">|</span>
+  $31.000 <span class="ml">(170 ml)</span>
+  <span class="sep">|</span></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ9S52DMUQsXLprVPhta7SiRDws4mMFkkaDg&s" alt="depilatorio instantaneo">
+    <h4>Esta exclusiva y moderna fórmula en gel ha sido desarrollada con tecnología de avanzada, combinando extractos de origen natural y humectantes. Permite aclarar su cabello gradualmente sin necesidad de usar tintes hasta obtener el tono deseado cuidándolo, aportándole brillo y luminosidad.</h4>
+</div>
+
+</body>
+</html>
