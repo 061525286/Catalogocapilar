@@ -1,216 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera - Productos Capilares</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Primera - Productos Capilares</title>
 
+<style>
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
-            padding-top: 80px;
-        }
-
-
-        /* Menú de navegación fijo */
-        .menu-secciones {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 15px 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 15px;
-        }
-
-
-        .menu-secciones h3 {
-            color: white;
-            font-size: 18px;
-            margin-right: 10px;
-        }
-
-
-        .menu-secciones a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 20px;
-            transition: all 0.3s ease;
-            font-size: 14px;
-        }
-
-
-        .menu-secciones a:hover {
-            background: rgba(255,255,255,0.4);
-            transform: translateY(-2px);
-        }
-
-
-        /* Título principal */
-        h1 {
-            text-align: center;
-            color: #667eea;
-            font-size: 3em;
-            margin: 30px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-
-
-        /* Secciones de marcas */
-        h2 {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            margin: 40px 0 30px 0;
-            border-radius: 10px;
-            font-size: 2em;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-
-        /* Contenedor para cada producto */
-        .producto {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 25px auto;
-            max-width: 800px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-
-        .producto:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-        }
-
-
-        /* Logos de marcas */
-        .logo-marca {
-            display: block;
-            max-width: 300px;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-
-
-        /* Nombres de productos */
-        h3 {
-            color: #667eea;
-            font-size: 1.5em;
-            margin: 15px 0 10px 0;
-        }
-
-
-        /* Precios */
-        .precio {
-            color: #27ae60;
-            font-size: 1.8em;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-
-        /* Imágenes de productos */
-              .producto img {
-    display: block;
-    width: 350px;      /* mismo ancho */
-    height: 350px;     /* misma altura */
-    object-fit: cover; /* recorta sin deformar */
-    margin: 28px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.img-linea {
-  width: 200px;
-  display: inline-block;
-  margin-right: 10px;
+body{
+font-family:'Playfair Display', serif;
+color:#5F5F5F;
+background:#FFF7F2;
+padding-top:90px;
 }
 
+/* MENÚ SUPERIOR */
+.menu-secciones{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#F6C8A8;
+padding:15px 20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+z-index:1000;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:12px;
+}
 
-        /* Descripciones */
-        h4 {
-            color: #555;
-            font-size: 1.1em;
-            line-height: 1.8;
-            margin: 15px 0;
-            text-align: justify;
-            font-weight: normal;
-        }
+.menu-secciones h3{
+color:white;
+font-size:18px;
+}
 
+.menu-secciones a{
+color:#5F5F5F;
+text-decoration:none;
+padding:8px 15px;
+background:#FFF7F2;
+border-radius:20px;
+transition:0.3s;
+font-size:14px;
+}
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
+.menu-secciones a:hover{
+background:white;
+transform:translateY(-2px);
+}
 
+/* TITULO PRINCIPAL */
+h1{
+text-align:center;
+color:#F6C8A8;
+font-size:3em;
+margin:30px 0;
+}
 
-            h2 {
-                font-size: 1.5em;
-            }
+/* TITULO MARCAS */
+h2{
+background:#F6C8A8;
+color:white;
+padding:20px;
+margin:40px 0 30px 0;
+border-radius:10px;
+font-size:2em;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
 
+/* PRODUCTO */
+.producto{
+background:white;
+border-radius:15px;
+padding:25px;
+margin:25px auto;
+max-width:800px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+transition:transform 0.3s;
+}
 
-            .menu-secciones {
-                justify-content: center;
-            }
+.producto:hover{
+transform:translateY(-4px);
+}
 
+/* LOGO MARCA */
+.logo-marca{
+display:block;
+max-width:300px;
+margin:20px auto;
+border-radius:10px;
+}
 
-            .menu-secciones a {
-                font-size: 12px;
-                padding: 6px 12px;
-            }
+/* NOMBRE PRODUCTO */
+h3{
+color:#D98C6A;
+font-size:1.8em;
+margin:20px 0 12px 0;
+text-align:center;
+letter-spacing:1px;
+font-weight:600;
+position:relative;
+}
 
+h3::after{
+content:"";
+display:block;
+width:60px;
+height:3px;
+background:#F6C8A8;
+margin:8px auto 0;
+border-radius:5px;
+}
 
-            .producto {
-                padding: 15px;
-                margin: 15px 10px;
-            }
-        }
-    </style>
+/* PRECIO */
+.precio{
+color:#7FAF9A;
+font-size:1.8em;
+font-weight:bold;
+margin:10px 0;
+text-align:center;
+}
+
+/* IMAGEN PRODUCTO */
+.producto img{
+display:block;
+width:350px;
+height:350px;
+object-fit:cover;
+margin:28px auto;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.img-linea{
+width:200px;
+display:inline-block;
+margin-right:10px;
+}
+
+/* DESCRIPCIÓN */
+h4{
+color:#5F5F5F;
+font-size:1.1em;
+line-height:1.8;
+margin:15px 0;
+text-align:justify;
+font-weight:normal;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+h1{
+font-size:2em;
+}
+
+h2{
+font-size:1.5em;
+}
+
+.menu-secciones{
+justify-content:center;
+}
+
+.menu-secciones a{
+font-size:12px;
+padding:6px 12px;
+}
+
+.producto{
+padding:15px;
+margin:15px 10px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-<!-- MENÚ DE SECCIONES FIJO -->
+
 <div class="menu-secciones">
-    <h3>Ir a:</h3>
-    <a href="#anyeluz">Anyeluz</a>
-    <a href="#kaba">Kaba</a>
-    <a href="#lareceta">La Receta</a>
-    <a href="#ritual-botanico">Ritual Botánico</a>
-    <a href="#milagros">Milagros Herbal</a>
-    <a href="#clickhair">Click Hair</a>
-    <a href="#pocion">La Poción</a>
-    <a href="#leche">Leche pal Pelo</a>
-    <a href="#ole">Ole Capilar</a>
-    <a href="#lehit">Lehit</a>
-    <a href="#skala">Skala</a>
-    <a href="#dromatic">Dromatic</a>
-    <a href="#mentahair">Menta Hair</a>
-    <a href="#magichair">Magic Hair</a>
-    <a href="#prokpil">Prokpil</a>
-    <a href="#benatural">Be Natural</a>
-    <a href="#frutosalvaje">Fruto Salvaje</a>
-    <a href="#walaky">Walaky</a>
-    <a href="#karseell">Karseell</a>
+<h3>Ir a:</h3>
+<a href="#anyeluz">Anyeluz</a>
+<a href="#kaba">Kaba</a>
+<a href="#lareceta">La Receta</a>
+<a href="#ritual-botanico">Ritual Botánico</a>
+<a href="#milagros">Milagros Herbal</a>
+<a href="#clickhair">Click Hair</a>
+<a href="#pocion">La Poción</a>
+<a href="#leche">Leche pal Pelo</a>
+<a href="#ole">Ole Capilar</a>
+<a href="#lehit">Lehit</a>
+<a href="#skala">Skala</a>
+<a href="#dromatic">Dromatic</a>
+<a href="#mentahair">Menta Hair</a>
+<a href="#magichair">Magic Hair</a>
+<a href="#prokpil">Prokpil</a>
+<a href="#benatural">Be Natural</a>
+<a href="#frutosalvaje">Fruto Salvaje</a>
+<a href="#walaky">Walaky</a>
+<a href="#karseell">Karseell</a>
 </div>
 
 
